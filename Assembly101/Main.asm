@@ -1,15 +1,36 @@
-.386
-.model flat, stdcall
-.stack 4096
+stack segment para stack
+	db 64 dup ('_')
+stack ends
+data segment
 
-ExitProcess PROTO, dwExitCode:DWORD
+	string db 'Hello World, from Assembly!','$'
 
-.data
+data ends
 
-.code
-main PROC
+code segment
+	assume cs:code,ds:data,ss:stack
+	mov ax,data
+	mov ds,ax
+	mov ax,stack
+	mov ss,ax
+	
+	main proc
+	
+		call show_string
+		
+		mov ah, 4ch
+		int 21h
+	
+	main endp
+	
+	show_string proc
+	
+		mov ah, 09h
+		lea dx, string
+		int 21h
 
-  INVOKE ExitProcess, 0
-main ENDP
+		ret
+	show_string endp
 
-END main        ;specify the program's entry point
+code ends
+end
