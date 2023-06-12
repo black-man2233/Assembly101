@@ -20,8 +20,18 @@
     </MASM>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="asm_io.inc">
-      <Filter>Header Files</Filter>
-    </Resource>
+    <None Include="BIN2HEX.EXE" />
+    <None Include="DEBUG.EXE" />
+    <None Include="EDIT.COM" />
+    <None Include="EXE2BIN.EXE" />
+    <None Include="LINK.EXE" />
+    <None Include="MASM.EXE" />
+    <None Include="TASM.EXE" />
+    <None Include="TD.EXE" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="asm_io.inc">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

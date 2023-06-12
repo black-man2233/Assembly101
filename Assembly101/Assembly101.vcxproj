@@ -138,6 +138,16 @@
   <ItemGroup>
     <ClInclude Include="asm_io.inc" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="BIN2HEX.EXE" />
+    <None Include="DEBUG.EXE" />
+    <None Include="EDIT.COM" />
+    <None Include="EXE2BIN.EXE" />
+    <None Include="LINK.EXE" />
+    <None Include="MASM.EXE" />
+    <None Include="TASM.EXE" />
+    <None Include="TD.EXE" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
     <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
