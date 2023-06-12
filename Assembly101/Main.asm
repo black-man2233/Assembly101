@@ -3,7 +3,6 @@ stack segment para stack
 stack ends
 data segment
 	string db 'Hello World, from Assembly!','$'
-;	include proc.inc
 data ends
 
 code segment
