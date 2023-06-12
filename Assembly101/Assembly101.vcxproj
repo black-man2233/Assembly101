@@ -148,6 +148,14 @@
     <None Include="TASM.EXE" />
     <None Include="TD.EXE" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="MAIN.EXE" />
+    <Content Include="MAIN.OBJ" />
+    <Content Include="MAINC.CRF" />
+    <Content Include="MAINE.EXE" />
+    <Content Include="MAINL.LST" />
+    <Content Include="MAINM.MAP" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
     <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
